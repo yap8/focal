@@ -1,3 +1,49 @@
 .testimonials-carousel {
-  
+  &__list {
+
+  }
+  &__list-item {
+    max-width: 1060px;
+    display: none;
+    text-align: center;
+    &--active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__list-item-quote {
+    font-size: 24px;
+    color: #909090;
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+  &__list-item-paragraph {
+
+  }
+  &__list-item-source {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #556265;
+    margin-bottom: 40px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+  &__buttons-button {
+    height: 12px;
+    width: 12px;
+    border: 1px solid #2ACB72;
+    border-radius: 50%;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 9px;
+    }
+    &--active {
+      background-color: #2ACB72;
+    }
+  }
 }
