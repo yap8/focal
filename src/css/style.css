@@ -340,10 +340,38 @@ li {
   text-align: center;
   margin-bottom: 90px; }
 
-.section-contact__inner {
-  max-width: 1180px;
-  width: 95%;
-  margin: 0 auto; }
+.section-contact {
+  background-color: #242D2F; }
+  .section-contact__inner {
+    max-width: 1180px;
+    width: 95%;
+    margin: 0 auto;
+    height: 905px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .section-contact__title {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .section-contact__content-wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .section-contact__info {
+    width: 47%; }
+  .section-contact__info-text {
+    color: #909090;
+    font-size: 18px;
+    line-height: 30px; }
+  .section-contact__info-text-paragraph {
+    margin-bottom: 30px; }
+  .section-contact__info-text-paragraph-highlighted {
+    color: #fff;
+    font-weight: 400;
+    margin-right: 20px; }
+  .section-contact__form {
+    width: 47%; }
 
 .section-footer__inner {
   max-width: 1180px;
@@ -615,3 +643,41 @@ li {
   .portfolio-items__item-link:hover .portfolio-items__item-overlay {
     background-color: rgba(42, 203, 114, 0.75);
     opacity: 1; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .contact-form__form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; }
+    .contact-form__form-group:last-of-type {
+      margin-bottom: 40px; }
+  .contact-form__form-group-label {
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    margin-bottom: 20px; }
+  .contact-form__form-group-label-required {
+    margin-left: 3px;
+    margin-top: -3px;
+    font-size: 18px;
+    opacity: .5; }
+  .contact-form__form-group-input, .contact-form__form-group-textarea {
+    background-color: #4A5355;
+    border: 0;
+    height: 56px; }
+  .contact-form__form-group-textarea {
+    height: 279px;
+    resize: vertical; }
+  .contact-form__button {
+    background-color: #181E20;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    height: 56px;
+    width: 185px;
+    border: 0;
+    cursor: pointer; }

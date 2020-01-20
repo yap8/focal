@@ -1,5 +1,40 @@
 .section-contact {
+  background-color: #242D2F;
   &__inner {
     @include container;
+    height: 905px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 47%;
+
+  }
+  &__info-text {
+    color: #909090;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__info-text-paragraph {
+    margin-bottom: 30px;
+  }
+  &__info-text-paragraph-highlighted {
+    color: #fff;
+    font-weight: 400;
+    margin-right: 20px;
+  }
+  &__form {
+    width: 47%;
   }
 }

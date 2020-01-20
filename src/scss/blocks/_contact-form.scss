@@ -1,3 +1,48 @@
 .contact-form {
-  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+  &__form-group-label {
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__form-group-label-required {
+    margin-left: 3px;
+    margin-top: -3px;
+    font-size: 18px;
+    opacity: .5;
+  }
+  &__form-group-input,
+  &__form-group-textarea {
+    background-color: #4A5355;
+    border: 0;
+    height: 56px;
+  }
+  &__form-group-input {
+  }
+  &__form-group-textarea {
+    height: 279px;
+    resize: vertical;
+  }
+  &__button {
+    background-color: #181E20;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    height: 56px;
+    width: 185px;
+    border: 0;
+    cursor: pointer;
+  }
 }
