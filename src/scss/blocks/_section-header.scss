@@ -1,5 +1,18 @@
 .section-header {
+  margin-top: -70px;
+  background-color: #242D2F;
   &__inner {
     @include container;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    height: 100%;
+  }
+  &__nav {
+    width: 66%;
+    height: 100%;
   }
 }

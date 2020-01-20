@@ -1,10 +1,18 @@
 .nav {
+  height: 100%;
   &__list {
+    height: 100%;
     display: flex;
   }
   &__list-item {
+    height: 100%;
+    width: 100%;
   }
   &__list-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
