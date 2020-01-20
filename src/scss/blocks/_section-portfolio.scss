@@ -1,3 +1,5 @@
 .section-portfolio {
-  @include container;
+  &__inner {
+    @include container;
+  }
 }

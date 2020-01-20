@@ -1,3 +1,5 @@
 .section-header {
-  @include container;
+  &__inner {
+    @include container;
+  }
 }

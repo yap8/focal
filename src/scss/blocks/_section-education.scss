@@ -1,3 +1,5 @@
 .section-education {
-  @include container;
+  &__inner {
+    @include container;
+  }
 }

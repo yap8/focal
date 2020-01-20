@@ -1,3 +1,5 @@
 .section-testimonials {
-  @include container;
+  &__inner {
+    @include container;
+  }
 }

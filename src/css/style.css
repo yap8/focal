@@ -15,62 +15,62 @@ a {
 li {
   list-style-type: none; }
 
-.section-hero {
+.section-hero__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-header {
+.section-header__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-about-me-items {
+.section-about-me-items__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-about-me-block {
+.section-about-me-block__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-skills {
+.section-skills__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-resume {
+.section-resume__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-education {
+.section-education__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-experience {
+.section-experience__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-testimonials {
+.section-testimonials__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-portfolio {
+.section-portfolio__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-contact {
+.section-contact__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-footer {
+.section-footer__inner {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }

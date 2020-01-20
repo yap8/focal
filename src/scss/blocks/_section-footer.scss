@@ -1,3 +1,5 @@
 .section-footer {
-  @include container;
+  &__inner {
+    @include container;
+  }
 }

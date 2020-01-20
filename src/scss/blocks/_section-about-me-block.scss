@@ -1,3 +1,5 @@
 .section-about-me-block {
-  @include container;
+  &__inner {
+    @include container;
+  }
 }

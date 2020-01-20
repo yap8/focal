@@ -1,3 +1,5 @@
 .section-about-me-items {
-  @include container;
+  &__inner {
+    @include container;
+  }
 }

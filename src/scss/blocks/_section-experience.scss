@@ -1,3 +1,5 @@
 .section-experience {
-  @include container;
+  &__inner {
+    @include container;
+  }
 }

@@ -1,3 +1,5 @@
 .section-skills {
-  @include container;
+  &__inner {
+    @include container;
+  }
 }
