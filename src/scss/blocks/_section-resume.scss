@@ -1,5 +1,51 @@
 .section-resume {
+  background-color: #F1F1F0;
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 20px solid #F1F1F0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   &__inner {
     @include container;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    color: #556365;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  &__text {
+    color: #909090;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  &__text-paragraph {
+
+  }
+  &__button {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 215px;
+    color: #2ACB72;
+    border: 2px solid #2ACB72;
   }
 }
