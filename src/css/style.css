@@ -142,7 +142,48 @@ li {
 .section-skills__inner {
   max-width: 1180px;
   width: 95%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 620px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.section-skills__title {
+  color: #556265;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
+
+.section-skills__content-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.section-skills__info {
+  width: 47%; }
+
+.section-skills__info-text {
+  color: #909090;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px; }
+
+.section-skills__info-text-paragraph:not(:last-child) {
+  margin-bottom: 20px; }
+
+.section-skills__info-button {
+  height: 56px;
+  width: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #2ACB72;
+  font-size: 18px;
+  color: #2ACB72;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.section-skills__progress {
+  width: 47%; }
 
 .section-resume__inner {
   max-width: 1180px;
@@ -247,3 +288,24 @@ li {
     font-size: 18px;
     color: #909090;
     line-height: 30px; }
+
+.skills-progress__item-title {
+  color: #556365;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.skills-progress__item-bar {
+  height: 30px;
+  background-color: #F1F1F0;
+  margin-bottom: 30px; }
+
+.skills-progress__item-bar-done {
+  height: 100%;
+  background-color: #2ACB72;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: #fff;
+  font-size: 18px; }
