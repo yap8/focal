@@ -1,3 +1,36 @@
 .about-content-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-shrink: 0;
+  &__item {
+    width: 50%;
+    max-width: 320px;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__item-icon-wrapper {
+    margin-right: 30px;
+  }
+  &__item-icon {
 
+  }
+  &__item-content {
+
+  }
+  &__item-title {
+    color: #556365;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__item-text {
+    font-size: 18px;
+    color: #909090;
+    line-height: 30px;
+  }
+  &__item-text-paragraph {
+
+  }
 }

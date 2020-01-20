@@ -70,36 +70,74 @@ li {
     width: 66%;
     height: 100%; }
 
-.section-about-me-items__inner {
+.section-about-items__inner {
   height: 345px;
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
 
-.section-about-me-items__list {
+.section-about-items__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%; }
 
-.section-about-me-items__list-item {
+.section-about-items__list-item {
   width: 32%; }
 
-.section-about-me-items__list-title {
+.section-about-items__list-title {
   font-size: 30px;
   color: #556365;
   text-transform: uppercase;
   margin-bottom: 35px; }
 
-.section-about-me-items__list-text {
+.section-about-items__list-text {
   font-size: 18px;
   color: #909090;
   line-height: 30px; }
 
-.section-about-me-block__inner {
-  max-width: 1180px;
-  width: 95%;
-  margin: 0 auto; }
+.section-about-block__inner {
+  height: 755px;
+  display: flex; }
+
+.section-about-block__photo-wrapper {
+  width: 38%;
+  overflow: hidden;
+  position: relative; }
+
+.section-about-block__photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%; }
+
+.section-about-block__content-wrapper {
+  width: 62%;
+  background-color: #F1F1F0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px; }
+
+.section-about-block__content {
+  width: 80%;
+  max-width: 680px; }
+
+.section-about-block__content-title {
+  font-size: 30px;
+  color: #556365;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
+
+.section-about-block__content-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #909090;
+  margin-bottom: 40px; }
+
+.section-about-block__content-text-paragraph:not(:last-child) {
+  margin-bottom: 30px; }
 
 .section-skills__inner {
   max-width: 1180px;
@@ -186,3 +224,26 @@ li {
     color: #fff; }
     .nav__list-item-link:hover {
       color: #2acb72; }
+
+.about-content-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-shrink: 0; }
+  .about-content-list__item {
+    width: 50%;
+    max-width: 320px;
+    display: flex;
+    margin-bottom: 40px; }
+  .about-content-list__item-icon-wrapper {
+    margin-right: 30px; }
+  .about-content-list__item-title {
+    color: #556365;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .about-content-list__item-text {
+    font-size: 18px;
+    color: #909090;
+    line-height: 30px; }
