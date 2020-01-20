@@ -233,7 +233,35 @@ li {
 .section-education__inner {
   max-width: 1180px;
   width: 95%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.section-education__title {
+  color: #556365;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
+
+.section-education__content-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.section-education__info {
+  width: 47%; }
+
+.section-education__info-text {
+  font-size: 18px;
+  color: #909090;
+  line-height: 30px; }
+
+.section-education__info-text-paragraph {
+  margin-bottom: 30px; }
+
+.section-education__items {
+  width: 47%; }
 
 .section-experience__inner {
   max-width: 1180px;
@@ -349,3 +377,55 @@ li {
   padding-right: 10px;
   color: #fff;
   font-size: 18px; }
+
+.education-items__item:not(:last-child) {
+  margin-bottom: 65px; }
+
+.education-items__item-title {
+  font-size: 22px;
+  color: #556365;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.education-items__item-source {
+  display: flex;
+  margin-bottom: 15px; }
+
+.education-items__item-source-link, .education-items__item-source-separator, .education-items__item-source-date {
+  font-size: 18px;
+  color: #909090; }
+
+.education-items__item-source-link {
+  font-weight: 700; }
+  .education-items__item-source-link:hover {
+    text-decoration: underline; }
+
+.education-items__item-source-separator {
+  margin-left: 6px;
+  margin-right: 6px; }
+
+.education-items__item-source-date {
+  color: #909090; }
+
+.education-items__item-important {
+  height: 30px;
+  width: 70px;
+  background-color: #2ACB72;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  margin-bottom: 30px; }
+
+.education-items__item-separator {
+  background-color: #CBCBCB;
+  height: 1px;
+  margin-bottom: 25px; }
+
+.education-items__item-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #909090; }

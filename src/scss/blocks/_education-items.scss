@@ -1,3 +1,63 @@
 .education-items {
-  
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 65px;
+    }
+  }
+  &__item-title {
+    font-size: 22px;
+    color: #556365;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__item-source {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  &__item-source-link,
+  &__item-source-separator,
+  &__item-source-date {
+    font-size: 18px;
+    color: #909090;
+  }
+  &__item-source-link {
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__item-source-separator {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  &__item-source-date {
+    color: #909090;
+
+  }
+  &__item-important {
+    height: 30px;
+    width: 70px;
+    background-color: #2ACB72;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    margin-bottom: 30px;
+  }
+  &__item-separator {
+    background-color: #CBCBCB;
+    height: 1px;
+    margin-bottom: 25px;
+  }
+  &__item-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #909090;
+  }
+  &__item-text-paragraph {
+
+  }
 }
