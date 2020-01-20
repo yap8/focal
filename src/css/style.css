@@ -373,10 +373,50 @@ li {
   .section-contact__form {
     width: 47%; }
 
-.section-footer__inner {
-  max-width: 1180px;
-  width: 95%;
-  margin: 0 auto; }
+.section-footer {
+  background-color: #181E20; }
+  .section-footer__inner {
+    max-width: 1180px;
+    width: 95%;
+    margin: 0 auto;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .section-footer__copyright {
+    display: flex;
+    color: #4A5355;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .section-footer__copyright-link {
+    margin-left: 4px;
+    color: #4A5355;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .section-footer__copyright-link:hover {
+      text-decoration: underline; }
+  .section-footer__list {
+    display: flex; }
+  .section-footer__list-item:not(:last-child) {
+    margin-right: 10px; }
+  .section-footer__list-item-link {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #4A5355;
+    position: relative; }
+  .section-footer__list-item-link:hover .section-footer__list-item-link-icon svg {
+    fill: #fff; }
+  .section-footer__list-item-link-icon {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section-footer__list-item-link-icon svg {
+      height: 18px;
+      fill: #181E20; }
 
 .logo {
   display: flex;
