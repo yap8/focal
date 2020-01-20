@@ -132,3 +132,13 @@ li {
     font-size: 30px; }
     .logo__extra-text--highlighted {
       color: #2acb72; }
+
+.nav__list {
+  display: flex; }
+
+.nav__list-item-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff; }
+  .nav__list-item-link:hover {
+    color: #2acb72; }
