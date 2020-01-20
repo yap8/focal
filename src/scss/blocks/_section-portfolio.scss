@@ -1,5 +1,27 @@
 .section-portfolio {
   &__inner {
     @include container;
+    height: 1395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #556365;
+    margin-bottom: 40px;
+  }
+  &__text {
+    color: #909090;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  &__items {
+    
   }
 }
