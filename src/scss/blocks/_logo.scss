@@ -1,3 +1,29 @@
 .logo {
-  
+  display: flex;
+  &__main {
+    background-color: #4a5355;
+    color: #fff;
+    font-size: 32px;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 20px;
+  }
+  &__extra {
+    display: flex;
+    align-items: center;
+  }
+  &__extra-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-size: 30px;
+    &--highlighted {
+      color: #2acb72;
+    }
+  }
 }
