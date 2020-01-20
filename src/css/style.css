@@ -237,7 +237,16 @@ li {
   height: 820px;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
+  .section-education__inner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color: #CBCBCB;
+    height: 1px;
+    width: 100%; }
 
 .section-education__title {
   color: #556365;
