@@ -14,3 +14,63 @@ a {
 
 li {
   list-style-type: none; }
+
+.section-hero {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-header {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-about-me-items {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-about-me-block {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-skills {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-resume {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-education {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-experience {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-testimonials {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-portfolio {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-contact {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
+
+.section-footer {
+  max-width: 1180px;
+  width: 95%;
+  margin: 0 auto; }
