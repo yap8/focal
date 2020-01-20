@@ -1,5 +1,26 @@
 .section-about-me-items {
   &__inner {
+    height: 345px;
     @include container;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &__list-item {
+    width: 32%;
+  }
+  &__list-title {
+    font-size: 30px;
+    color: #556365;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+  &__list-text {
+    font-size: 18px;
+    color: #909090;
+    line-height: 30px;
   }
 }

@@ -71,9 +71,30 @@ li {
     height: 100%; }
 
 .section-about-me-items__inner {
+  height: 345px;
   max-width: 1180px;
   width: 95%;
   margin: 0 auto; }
+
+.section-about-me-items__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; }
+
+.section-about-me-items__list-item {
+  width: 32%; }
+
+.section-about-me-items__list-title {
+  font-size: 30px;
+  color: #556365;
+  text-transform: uppercase;
+  margin-bottom: 35px; }
+
+.section-about-me-items__list-text {
+  font-size: 18px;
+  color: #909090;
+  line-height: 30px; }
 
 .section-about-me-block__inner {
   max-width: 1180px;
