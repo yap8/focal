@@ -266,7 +266,35 @@ li {
 .section-experience__inner {
   max-width: 1180px;
   width: 95%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.section-experience__title {
+  color: #556365;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
+
+.section-experience__content-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.section-experience__info {
+  width: 47%; }
+
+.section-experience__info-text {
+  font-size: 18px;
+  color: #909090;
+  line-height: 30px; }
+
+.section-experience__info-text-paragraph {
+  margin-bottom: 30px; }
+
+.section-experience__items {
+  width: 47%; }
 
 .section-testimonials__inner {
   max-width: 1180px;
@@ -426,6 +454,58 @@ li {
   margin-bottom: 25px; }
 
 .education-items__item-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #909090; }
+
+.experience-items__item:not(:last-child) {
+  margin-bottom: 65px; }
+
+.experience-items__item-title {
+  font-size: 22px;
+  color: #556365;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.experience-items__item-source {
+  display: flex;
+  margin-bottom: 15px; }
+
+.experience-items__item-source-link, .experience-items__item-source-separator, .experience-items__item-source-date {
+  font-size: 18px;
+  color: #909090; }
+
+.experience-items__item-source-link {
+  font-weight: 700; }
+  .experience-items__item-source-link:hover {
+    text-decoration: underline; }
+
+.experience-items__item-source-separator {
+  margin-left: 6px;
+  margin-right: 6px; }
+
+.experience-items__item-source-date {
+  color: #909090; }
+
+.experience-items__item-important {
+  height: 30px;
+  width: 70px;
+  background-color: #2ACB72;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  margin-bottom: 30px; }
+
+.experience-items__item-separator {
+  background-color: #CBCBCB;
+  height: 1px;
+  margin-bottom: 25px; }
+
+.experience-items__item-text {
   font-size: 18px;
   line-height: 30px;
   color: #909090; }
