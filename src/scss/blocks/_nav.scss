@@ -6,7 +6,7 @@
   }
   &__list-item {
     height: 100%;
-    width: 100%;
+    flex-grow: 1;
   }
   &__list-item-link {
     display: flex;

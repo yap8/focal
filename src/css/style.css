@@ -459,7 +459,7 @@ li {
     display: flex; }
   .nav__list-item {
     height: 100%;
-    width: 100%; }
+    flex-grow: 1; }
   .nav__list-item-link {
     display: flex;
     align-items: center;
