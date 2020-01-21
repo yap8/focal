@@ -22,3 +22,18 @@
     once: true
   }) 
 }
+
+// Progress bar dynamic fill
+{
+  const progressBars = document.querySelectorAll('.skills-progress__item-bar-done')
+  
+  document.addEventListener('aos:in', ({ detail }) => {
+    if (detail.classList.contains('section-skills__inner')) {
+      progressBars.forEach(progressBar => {
+        const progressBarValue = +progressBar.textContent.replace('%', '')
+    
+        progressBar.style.maxWidth = `${progressBarValue}%`
+      })
+    }
+  })
+}
