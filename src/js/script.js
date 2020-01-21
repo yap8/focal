@@ -19,7 +19,8 @@
 // Animate on scroll library
 {
   AOS.init({
-    once: true
+    once: true,
+    offset: 180
   }) 
 }
 
