@@ -1,6 +1,13 @@
 .section-header {
   margin-top: -70px;
   background-color: #242D2F;
+  width: 100%;
+  z-index: 999;
+  &--active {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+  }
   &__inner {
     @include container;
     height: 70px;
