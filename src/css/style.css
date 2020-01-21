@@ -16,11 +16,11 @@ a {
 li {
   list-style-type: none; }
 
-.section-hero {
+.section-home {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center top; }
-  .section-hero__inner {
+  .section-home__inner {
     max-width: 1180px;
     width: 95%;
     margin: 0 auto;
@@ -29,22 +29,22 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  .section-hero__title {
+  .section-home__title {
     font-size: 60px;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 50px; }
-    .section-hero__title::before, .section-hero__title::after {
+    .section-home__title::before, .section-home__title::after {
       content: '';
       display: block;
       width: 100%;
       height: 2px;
       background-color: #fff; }
-    .section-hero__title::before {
+    .section-home__title::before {
       margin-bottom: 2px; }
-    .section-hero__title::after {
+    .section-home__title::after {
       margin-top: 2px; }
-  .section-hero__button {
+  .section-home__button {
     height: 56px;
     width: 185px;
     display: flex;
