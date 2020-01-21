@@ -88,7 +88,11 @@ const buildCss = () => {
 const buildImg = () =>
 	gulp.src('src/img/**/*')
 		.pipe(tinypng())
-		.pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('dist/img'))
+    
+const buildIco = () =>
+  gulp.src('src/*.ico')
+    .pipe(gulp.dest('dist'))
 
 const buildFonts = () =>
 	gulp.src('src/fonts/**/*')
@@ -107,9 +111,10 @@ gulp.task('build:html', buildHtml)
 gulp.task('build:js', buildJs)
 gulp.task('build:css', buildCss)
 gulp.task('build:img', buildImg)
+gulp.task('build:ico', buildIco)
 gulp.task('build:fonts', buildFonts)
 
 // Combined tasks
 gulp.task('start', gulp.series(gulp.parallel('html', 'css', 'js', 'img'), 'watch'))
-gulp.task('build', gulp.series('clean', gulp.parallel('build:html', 'build:js', 'build:css', 'build:img', 'build:fonts')))
+gulp.task('build', gulp.series('clean', gulp.parallel('build:html', 'build:js', 'build:css', 'build:img', 'build:ico', 'build:fonts')))
 gulp.task('default', gulp.series('start'))
