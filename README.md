@@ -10,3 +10,4 @@
 * Download fonts
 * Add carousel
 * ~~Work on progress bars~~
+* Add lazyload
