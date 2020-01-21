@@ -4,6 +4,7 @@
 * Add media queries
 * ~~Add smooth scroll~~
 * Change header behavior
+* Add favicon
 * Add animation on scroll
 * Fix bugs
 * Download fonts
