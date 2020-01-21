@@ -9,4 +9,4 @@
 * Fix bugs
 * Download fonts
 * Add carousel
-* Work on progress bars
+* ~~Work on progress bars~~
