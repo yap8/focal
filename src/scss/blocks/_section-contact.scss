@@ -34,6 +34,12 @@
     font-weight: 400;
     margin-right: 20px;
   }
+  &__info-text-paragraph-link {
+    color: #909090;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   &__form {
     width: 47%;
   }
