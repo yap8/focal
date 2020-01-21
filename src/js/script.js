@@ -15,3 +15,10 @@
 
   window.addEventListener('scroll', handleScroll)
 }
+
+// Animate on scroll library
+{
+  AOS.init({
+    once: true
+  }) 
+}
