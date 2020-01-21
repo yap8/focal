@@ -9,7 +9,6 @@ const gulp = require('gulp'),
 			cssnano = require('cssnano'),
 			browserSync = require('browser-sync').create(),
 			uglify = require('gulp-uglify'),
-			concat = require('gulp-concat'),
 			babel = require('gulp-babel'),
 			tinypng = require('gulp-tinypng-unlimited'),
 			del = require('del')
