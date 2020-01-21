@@ -716,9 +716,13 @@ li {
   .contact-form__form-group-input, .contact-form__form-group-textarea {
     background-color: #4A5355;
     border: 0;
-    height: 56px; }
+    height: 56px;
+    font-size: 22px;
+    padding-left: 8px;
+    color: #fff; }
   .contact-form__form-group-textarea {
-    height: 279px;
+    padding-top: 8px;
+    height: 280px;
     resize: vertical; }
   .contact-form__button {
     background-color: #181E20;
