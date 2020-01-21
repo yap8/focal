@@ -1,17 +1,14 @@
 .testimonials-carousel {
   &__list {
+    max-width: 1060px;
 
   }
   &__list-item {
-    max-width: 1060px;
-    display: none;
     text-align: center;
-    &--active {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__list-item-quote {
     font-size: 24px;
