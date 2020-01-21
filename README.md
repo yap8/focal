@@ -2,7 +2,7 @@
 
 ## Todo
 * Add media queries
-* Add smooth scroll
+* ~~Add smooth scroll~~
 * Add animation on scroll
 * Fix bugs
 * Download fonts
