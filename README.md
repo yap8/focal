@@ -5,6 +5,7 @@
 * ~~Add smooth scroll~~
 * ~~Change header behavior~~
 * Add favicon
+* Improve accessibility
 * ~~Add animation on scroll~~
 * Fix bugs
 * Download fonts
