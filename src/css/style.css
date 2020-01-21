@@ -373,10 +373,11 @@ li {
     line-height: 30px; }
   .section-contact__info-text-paragraph {
     margin-bottom: 30px; }
-  .section-contact__info-text-paragraph-highlighted {
-    color: #fff;
-    font-weight: 400;
-    margin-right: 20px; }
+    .section-contact__info-text-paragraph--pre {
+      white-space: pre-line; }
+  .section-contact__info-text-paragraph-highlight {
+    margin-right: 20px;
+    color: #fff; }
   .section-contact__info-text-paragraph-link {
     color: #909090; }
     .section-contact__info-text-paragraph-link:hover {

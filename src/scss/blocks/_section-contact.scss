@@ -28,11 +28,13 @@
   }
   &__info-text-paragraph {
     margin-bottom: 30px;
+    &--pre {
+      white-space: pre-line;
+    }
   }
-  &__info-text-paragraph-highlighted {
-    color: #fff;
-    font-weight: 400;
+  &__info-text-paragraph-highlight {
     margin-right: 20px;
+    color: #fff;
   }
   &__info-text-paragraph-link {
     color: #909090;
