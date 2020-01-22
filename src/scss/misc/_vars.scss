@@ -7,6 +7,7 @@ $fs-s: 14px;
 $c-primary: #2acb72;
 $c-secondary: #fff;
 
-$tc-primary: #fff;
+$tc-primary: $c-secondary;
 $tc-01: #556365;
 $tc-02: #909090;
+$tc-03: $c-primary;
