@@ -1,5 +1,5 @@
 .section-footer {
-  background-color: #181E20;
+  background-color: $sc-04;
   &__inner {
     @include container;
     height: 180px;
