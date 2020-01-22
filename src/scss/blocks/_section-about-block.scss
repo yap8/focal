@@ -29,14 +29,14 @@
   }
   &__content-title {
     font-size: $fs-xl;
-    color: #556365;
+    color: $tc-01;
     text-transform: uppercase;
     margin-bottom: 40px;
   }
   &__content-text {
     font-size: $fs-m;
     line-height: 30px;
-    color: #909090;
+    color: $tc-01;
     margin-bottom: 40px;
   }
   &__content-text-paragraph {

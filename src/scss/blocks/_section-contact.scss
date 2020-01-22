@@ -8,7 +8,7 @@
     justify-content: center;
   }
   &__title {
-    color: $c-secondary;
+    color: $tc-primary;
     font-size: $fs-xl;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -22,7 +22,7 @@
 
   }
   &__info-text {
-    color: #909090;
+    color: $tc-01;
     font-size: $fs-m;
     line-height: 30px;
   }
@@ -34,10 +34,10 @@
   }
   &__info-text-paragraph-highlight {
     margin-right: 20px;
-    color: $c-secondary;
+    color: $tc-primary;
   }
   &__info-text-paragraph-link {
-    color: #909090;
+    color: $tc-01;
     &:hover {
       text-decoration: underline;
     }

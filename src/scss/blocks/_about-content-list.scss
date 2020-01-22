@@ -20,14 +20,14 @@
 
   }
   &__item-title {
-    color: #556365;
+    color: $tc-01;
     font-size: $fs-l;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
   &__item-text {
     font-size: $fs-m;
-    color: #909090;
+    color: $tc-01;
     line-height: 30px;
   }
   &__item-text-paragraph {

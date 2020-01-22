@@ -2,7 +2,7 @@
   &__item {
   }
   &__item-title {
-    color: #556365;
+    color: $tc-01;
     font-size: $fs-l;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 10px;
-    color: $c-secondary;
+    color: $tc-primary;
     font-size: $fs-m;
   }
 }

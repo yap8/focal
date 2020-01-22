@@ -4,7 +4,7 @@
   height: 100%;
   &__main {
     background-color: #4a5355;
-    color: $c-secondary;
+    color: $tc-primary;
     font-size: $fs-xl;
     height: 42px;
     width: 42px;
@@ -22,7 +22,7 @@
   &__extra-text {
     text-transform: uppercase;
     font-weight: 700;
-    color: $c-secondary;
+    color: $tc-primary;
     font-size: $fs-xl;
     &--highlighted {
       color: $c-primary;

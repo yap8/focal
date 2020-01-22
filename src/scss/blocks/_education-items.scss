@@ -6,7 +6,7 @@
   }
   &__item-title {
     font-size: $fs-l;
-    color: #556365;
+    color: $tc-01;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
@@ -18,7 +18,7 @@
   &__item-source-separator,
   &__item-source-date {
     font-size: $fs-m;
-    color: #909090;
+    color: $tc-01;
   }
   &__item-source-link {
     font-weight: 700;
@@ -31,7 +31,7 @@
     margin-right: 6px;
   }
   &__item-source-date {
-    color: #909090;
+    color: $tc-01;
 
   }
   &__item-important {
@@ -40,7 +40,7 @@
     background-color: $c-primary;
     font-size: $fs-s;
     font-weight: 700;
-    color: $c-secondary;
+    color: $tc-primary;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +55,7 @@
   &__item-text {
     font-size: $fs-m;
     line-height: 30px;
-    color: #909090;
+    color: $tc-01;
   }
   &__item-text-paragraph {
 

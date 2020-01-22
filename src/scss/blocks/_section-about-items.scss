@@ -14,13 +14,13 @@
   }
   &__list-title {
     font-size: $fs-xl;
-    color: #556365;
+    color: $tc-01;
     text-transform: uppercase;
     margin-bottom: 35px;
   }
   &__list-text {
     font-size: $fs-m;
-    color: #909090;
+    color: $tc-01;
     line-height: 30px;
   }
 }

@@ -12,7 +12,7 @@
   }
   &__title {
     font-size: $fs-h1;
-    color: $c-secondary;
+    color: $tc-primary;
     text-transform: uppercase;
     margin-bottom: 50px;
     &::before,
@@ -21,7 +21,7 @@
       display: block;
       width: 100%;
       height: 2px;
-      background-color: $c-secondary;
+      background-color: $tc-primary;
     }
     &::before {
       margin-bottom: 2px;
@@ -37,7 +37,7 @@
     align-items: center;
     justify-content: center;
     font-size: $fs-m;
-    color: $c-secondary;
+    color: $tc-primary;
     border: 2px solid $c-secondary;
   }
 }

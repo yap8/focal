@@ -11,11 +11,11 @@
     font-size: $fs-xl;
     text-transform: uppercase;
     font-weight: 700;
-    color: #556365;
+    color: $tc-01;
     margin-bottom: 40px;
   }
   &__text {
-    color: #909090;
+    color: $tc-01;
     font-size: $fs-m;
     line-height: 30px;
     text-align: center;
