@@ -1,7 +1,6 @@
 .section-portfolio {
   background-color: $sc-01;
   &__inner {
-    @include container;
     height: 1395px;
     display: flex;
     flex-direction: column;

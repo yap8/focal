@@ -13,7 +13,6 @@
     transform: translateX(-50%);
   }
   &__inner {
-    @include container;
     height: 420px;
     display: flex;
     flex-direction: column;

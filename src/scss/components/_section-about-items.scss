@@ -2,7 +2,6 @@
   background-color: $sc-01;
   &__inner {
     height: 345px;
-    @include container;
   }
   &__list {
     display: flex;

@@ -1,7 +1,6 @@
 .section-skills {
   background-color: $sc-01;
   &__inner {
-    @include container;
     height: 620px;
     display: flex;
     justify-content: center;

@@ -1,7 +1,6 @@
 .section-testimonials {
   background-color: $sc-02;
   &__inner {
-    @include container;
     height: 415px;
     display: flex;
     align-items: center;

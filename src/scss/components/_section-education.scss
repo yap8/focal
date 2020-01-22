@@ -1,7 +1,6 @@
 .section-education {
   background-color: $sc-01;
   &__inner {
-    @include container;
     height: 820px;
     display: flex;
     flex-direction: column;

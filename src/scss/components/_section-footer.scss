@@ -1,7 +1,6 @@
 .section-footer {
   background-color: $sc-04;
   &__inner {
-    @include container;
     height: 180px;
     display: flex;
     flex-direction: column;

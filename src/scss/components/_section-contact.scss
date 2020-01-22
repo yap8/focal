@@ -1,7 +1,6 @@
 .section-contact {
   background-color: $sc-03;
   &__inner {
-    @include container;
     height: 905px;
     display: flex;
     flex-direction: column;

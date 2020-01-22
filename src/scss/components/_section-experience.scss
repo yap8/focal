@@ -1,7 +1,6 @@
 .section-experience {
   background-color: $sc-01;
   &__inner {
-    @include container;
     height: 1130px;
     display: flex;
     flex-direction: column;
