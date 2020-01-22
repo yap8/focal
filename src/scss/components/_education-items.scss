@@ -25,6 +25,9 @@
     &:hover {
       text-decoration: underline;
     }
+    &:focus {
+      @include focus;
+    }
   }
   &__item-source-separator {
     margin-left: 6px;

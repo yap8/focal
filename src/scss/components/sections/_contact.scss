@@ -40,6 +40,9 @@
     &:hover {
       text-decoration: underline;
     }
+    &:focus {
+      @include focus;
+    }
   }
   &__form {
     width: 47%;

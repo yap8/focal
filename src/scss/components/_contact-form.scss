@@ -30,6 +30,10 @@
     font-size: $fs-l;
     padding-left: 8px;
     color: $tc-primary;
+    &:focus {
+      @include focus;
+      color: $c-secondary;
+    }
   }
   &__form-group-input {
   }

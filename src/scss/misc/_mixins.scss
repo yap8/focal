@@ -1,0 +1,7 @@
+@mixin focus {
+  border-radius: 3px;
+  outline: 0;
+  color: $c-primary;
+  border-color: $c-primary;
+  box-shadow: 0 0 0 3px $c-primary;
+}

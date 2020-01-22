@@ -42,5 +42,9 @@
     &--active {
       background-color: $c-primary;
     }
+    &:focus {
+      @include focus;
+      border-radius: 50%;
+    }
   }
 }

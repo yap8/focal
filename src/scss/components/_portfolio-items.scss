@@ -11,6 +11,9 @@
     display: block;
     position: relative;
     height: 300px;
+    &:focus {
+      @include focus;
+    }
   } 
   &__item-image {
     min-width: 100%;
@@ -32,7 +35,8 @@
     opacity: 0;
     background-image: url('../img/portfolio-overlay-icon.png');
   }
-  &__item-link:hover &__item-overlay {
+  &__item-link:hover &__item-overlay,
+  &__item-link:focus &__item-overlay {
     background-color: rgba($c-primary, .75);
     opacity: 1;
   }

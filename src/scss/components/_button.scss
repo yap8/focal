@@ -16,10 +16,7 @@
       background-color: rgba($tc-primary, .15);
     }
     &:focus {
-      background-color: rgba($tc-primary, .15);
-      color: $tc-03;
-      border-color: $tc-03;
-      box-shadow: 0 0 0 2px $tc-03;
+      @include focus;
     }
   }
   &--primary {
@@ -29,10 +26,7 @@
       background-color: rgba($tc-03, .15);
     }
     &:focus {
-      background-color: rgba($tc-03, .15);
-      color: $tc-03;
-      border-color: $tc-03;
-      box-shadow: 0 0 0 2px $tc-03;
+      @include focus;
     }
   }
   &--dark {
@@ -43,10 +37,7 @@
       background-color: rgba($sc-04, .65);
     }
     &:focus {
-      background-color: rgba($sc-04, .65);
-      color: $tc-03;
-      border-color: $tc-03;
-      box-shadow: 0 0 0 2px $tc-03;
+      @include focus;
     }
   }
 }

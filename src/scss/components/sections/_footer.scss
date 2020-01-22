@@ -21,6 +21,9 @@
     &:hover {
       text-decoration: underline;
     }
+    &:focus {
+      @include focus;
+    }
   }
   &__list {
     display: flex;
@@ -37,6 +40,15 @@
     border-radius: 50%;
     background-color: #4A5355;
     position: relative;
+    &:focus {
+      @include focus;
+      border-radius: 50%;
+    }
+  }
+  &__list-item-link:focus &__list-item-link-icon {
+    svg {
+      fill: $c-primary;
+    }
   }
   &__list-item-link:hover &__list-item-link-icon {
     svg {

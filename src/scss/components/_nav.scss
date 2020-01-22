@@ -19,5 +19,8 @@
     &:hover {
       color: $tc-03;
     }
+    &:focus {
+      @include focus;
+    }
   }
 }
