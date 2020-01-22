@@ -36,9 +36,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #2ACB72;
+    border: 2px solid $c-primary;
     font-size: $fs-m;
-    color: #2ACB72;
+    color: $c-primary;
     font-weight: 700;
     text-transform: uppercase;
   }

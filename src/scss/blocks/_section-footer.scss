@@ -41,7 +41,7 @@
   }
   &__list-item-link:hover &__list-item-link-icon {
     svg {
-      fill: #fff;
+      fill: $c-secondary;
     }
   }
   &__list-item-link-icon {

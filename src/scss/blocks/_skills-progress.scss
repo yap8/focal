@@ -16,12 +16,12 @@
     height: 100%;
     transition: 1.6s max-width ease; 
     max-width: 0;
-    background-color: #2ACB72;
+    background-color: $c-primary;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 10px;
-    color: #fff;
+    color: $c-secondary;
     font-size: $fs-m;
   }
 }

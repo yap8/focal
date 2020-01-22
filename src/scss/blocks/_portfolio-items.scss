@@ -33,7 +33,7 @@
     background-image: url('../img/portfolio-overlay-icon.png');
   }
   &__item-link:hover &__item-overlay {
-    background-color: rgba(#2ACB72, .75);
+    background-color: rgba($c-primary, .75);
     opacity: 1;
   }
 }

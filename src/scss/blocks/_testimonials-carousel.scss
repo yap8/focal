@@ -33,14 +33,14 @@
   &__buttons-button {
     height: 12px;
     width: 12px;
-    border: 1px solid #2ACB72;
+    border: 1px solid $c-primary;
     border-radius: 50%;
     cursor: pointer;
     &:not(:last-child) {
       margin-right: 9px;
     }
     &--active {
-      background-color: #2ACB72;
+      background-color: $c-primary;
     }
   }
 }

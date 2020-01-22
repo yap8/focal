@@ -15,9 +15,9 @@
     height: 100%;
     text-transform: uppercase;
     font-weight: 700;
-    color: #fff;
+    color: $c-secondary;
     &:hover {
-      color: #2acb72;
+      color: $c-primary;
     }
   }
 }

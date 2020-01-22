@@ -37,10 +37,10 @@
   &__item-important {
     height: 30px;
     width: 70px;
-    background-color: #2ACB72;
+    background-color: $c-primary;
     font-size: $fs-s;
     font-weight: 700;
-    color: #fff;
+    color: $c-secondary;
     display: flex;
     align-items: center;
     justify-content: center;
