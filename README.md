@@ -7,6 +7,7 @@
 * ~~Change header behavior~~
 * ~~Add favicon~~
 * Improve accessibility
+* Make button component
 * ~~Add animation on scroll~~
 * Fix bugs
 * Download fonts
