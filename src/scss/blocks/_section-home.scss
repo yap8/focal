@@ -15,6 +15,7 @@
     color: $tc-primary;
     text-transform: uppercase;
     margin-bottom: 50px;
+    text-align: center;
     &::before,
     &::after {
       content: '';
@@ -28,6 +29,18 @@
     }
     &::after {
       margin-top: 2px;
+    }
+    @media (max-width: $res-tablet) {
+      font-size: calc(#{$fs-h1} - 10px);
+      margin-bottom: 40px;
+    }
+    @media (max-width: $res-mobile) {
+      font-size: calc(#{$fs-h1} - 22px);
+      margin-bottom: 30px;
+    }
+    @media (max-width: $res-tiny) {
+      font-size: calc(#{$fs-h1} - 30px);
+      margin-bottom: 20px;
     }
   }
   &__button {
@@ -43,3 +56,4 @@
     border: 2px solid $c-secondary;
   }
 }
+
