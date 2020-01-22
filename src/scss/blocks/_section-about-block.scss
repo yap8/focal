@@ -28,13 +28,13 @@
     max-width: 680px;
   }
   &__content-title {
-    font-size: 30px;
+    font-size: $fs-xl;
     color: #556365;
     text-transform: uppercase;
     margin-bottom: 40px;
   }
   &__content-text {
-    font-size: 18px;
+    font-size: $fs-m;
     line-height: 30px;
     color: #909090;
     margin-bottom: 40px;

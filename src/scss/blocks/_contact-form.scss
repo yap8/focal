@@ -11,7 +11,7 @@
     }
   }
   &__form-group-label {
-    font-size: 18px;
+    font-size: $fs-m;
     color: #fff;
     display: flex;
     margin-bottom: 20px;
@@ -19,7 +19,7 @@
   &__form-group-label-required {
     margin-left: 3px;
     margin-top: -3px;
-    font-size: 18px;
+    font-size: $fs-m;
     opacity: .5;
   }
   &__form-group-input,
@@ -27,7 +27,7 @@
     background-color: #4A5355;
     border: 0;
     height: 56px;
-    font-size: 22px;
+    font-size: $fs-l;
     padding-left: 8px;
     color: #fff;
   }
@@ -43,7 +43,7 @@
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 18px;
+    font-size: $fs-m;
     height: 56px;
     width: 185px;
     border: 0;

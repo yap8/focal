@@ -3,7 +3,7 @@
   }
   &__item-title {
     color: #556365;
-    font-size: 22px;
+    font-size: $fs-l;
     text-transform: uppercase;
     margin-bottom: 15px;
   }
@@ -22,6 +22,6 @@
     justify-content: flex-end;
     padding-right: 10px;
     color: #fff;
-    font-size: 18px;
+    font-size: $fs-m;
   }
 }

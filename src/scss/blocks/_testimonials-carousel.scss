@@ -11,7 +11,7 @@
     align-items: center;
   }
   &__list-item-quote {
-    font-size: 24px;
+    font-size: $fs-l;
     color: #909090;
     text-align: center;
     line-height: 36px;
@@ -21,7 +21,7 @@
 
   }
   &__list-item-source {
-    font-size: 18px;
+    font-size: $fs-m;
     text-transform: uppercase;
     color: #556265;
     margin-bottom: 40px;

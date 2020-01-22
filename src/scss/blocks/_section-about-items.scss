@@ -13,13 +13,13 @@
     width: 32%;
   }
   &__list-title {
-    font-size: 30px;
+    font-size: $fs-xl;
     color: #556365;
     text-transform: uppercase;
     margin-bottom: 35px;
   }
   &__list-text {
-    font-size: 18px;
+    font-size: $fs-m;
     color: #909090;
     line-height: 30px;
   }

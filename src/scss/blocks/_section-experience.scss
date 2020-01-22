@@ -8,7 +8,7 @@
   }
   &__title {
     color: #556365;
-    font-size: 30px;
+    font-size: $fs-xl;
     text-transform: uppercase;
     margin-bottom: 40px;
   }
@@ -20,7 +20,7 @@
     width: 47%;
   }
   &__info-text {
-    font-size: 18px;
+    font-size: $fs-m;
     color: #909090;
     line-height: 30px;
   }

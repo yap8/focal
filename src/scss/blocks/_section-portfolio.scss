@@ -8,7 +8,7 @@
   }
   &__title {
     text-align: center;
-    font-size: 30px;
+    font-size: $fs-xl;
     text-transform: uppercase;
     font-weight: 700;
     color: #556365;
@@ -16,7 +16,7 @@
   }
   &__text {
     color: #909090;
-    font-size: 18px;
+    font-size: $fs-m;
     line-height: 30px;
     text-align: center;
     margin-bottom: 90px;
