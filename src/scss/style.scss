@@ -3,18 +3,18 @@
 @import 'misc/lib';
 @import 'misc/global';
 
-@import 'components/section-home';
-@import 'components/section-header';
-@import 'components/section-about-items';
-@import 'components/section-about-block';
-@import 'components/section-skills';
-@import 'components/section-resume';
-@import 'components/section-education';
-@import 'components/section-experience';
-@import 'components/section-testimonials';
-@import 'components/section-portfolio';
-@import 'components/section-contact';
-@import 'components/section-footer';
+@import 'components/sections/home';
+@import 'components/sections/header';
+@import 'components/sections/about-items';
+@import 'components/sections/about-block';
+@import 'components/sections/skills';
+@import 'components/sections/resume';
+@import 'components/sections/education';
+@import 'components/sections/experience';
+@import 'components/sections/testimonials';
+@import 'components/sections/portfolio';
+@import 'components/sections/contact';
+@import 'components/sections/footer';
 
 @import 'components/container';
 @import 'components/logo';
