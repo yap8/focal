@@ -44,6 +44,10 @@
   }
   &__button {
     width: 185px;
+    @media (max-width: $res-tablet) {
+      width: auto;
+      padding: 0 22px;
+    }
   }
 }
 
