@@ -1,120 +1,101 @@
-// Domain name for backend development, leave empty if frontend only
-const domainName = ''
+const gulp = require('gulp')
+const sass = require('gulp-sass')
+const postcss = require('gulp-postcss')
+const autoprefixer = require('autoprefixer')
+const cssnano = require('cssnano')
+const browserSync = require('browser-sync').create()
+const uglify = require('gulp-uglify')
+const babel = require('gulp-babel')
+const tinypng = require('gulp-tinypng-unlimited')
+const del = require('del')
+const posthtml = require('gulp-posthtml')
+const include = require('posthtml-include')
+const ttf2woff2 = require('gulp-ttf2woff2')
 
-// Requires
-const gulp = require('gulp'),
-			sass = require('gulp-sass'),
-			postcss = require('gulp-postcss'),
-			autoprefixer = require('autoprefixer'),
-			cssnano = require('cssnano'),
-			browserSync = require('browser-sync').create(),
-			uglify = require('gulp-uglify'),
-			babel = require('gulp-babel'),
-			tinypng = require('gulp-tinypng-unlimited'),
-			del = require('del')
-
-// Functions
-// Misc
 const serve = () => {
-	if (domainName) {
-		browserSync.init({
-			proxy: domainName
-		})
-	} else {
-		browserSync.init({
-			server: {
-				baseDir: "src/"
-			}
-		})
-	}
+  browserSync.init({
+    server: {
+      baseDir: "dist/"
+    }
+  })
 }
 
-const clean = () =>
-	del('dist')
+const clean = () => {
+	return del('dist')
+}
 
 // Development
-const html = () =>
-	gulp.src('src/**/*.html')
+const html = () => {
+  return gulp.src('src/**/*.html')
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.stream())
+}
 
-const css = () =>
-	gulp.src('src/scss/*.scss')
-		.pipe(sass())
-		.pipe(gulp.dest('src/css'))
+const css = () => {
+  const plugins = [
+    autoprefixer({
+      cascase: false
+    }),
+    cssnano()
+  ]
+	return gulp.src('src/scss/*.scss')
+    .pipe(sass())
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(browserSync.stream())
+  }
+  
+const js = () => {
+	return gulp.src('src/**/*.js')
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(uglify({
+      toplevel: true
+    }))
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.stream())
+  }
+  
+const img = () => {
+  return gulp.src(['src/img/**/*', 'src/images/**/*'])
+    .pipe(tinypng())
+    .pipe(gulp.dest('dist/img'))
 		.pipe(browserSync.stream())
+}
 
-const js = () =>
-	gulp.src('src/js/**/*.js')
-		.pipe(browserSync.stream())
+const ico = () => {
+  return gulp.src('src/*.ico')
+    .pipe(gulp.dest('dist'))
+}
 
-const img = () =>
-	gulp.src('src/img/**/*')
-		.pipe(browserSync.stream())
+const fonts = () => {
+  return gulp.src('src/fonts/**/*')
+    .pipe(ttf2woff2())
+		.pipe(gulp.dest('dist/fonts'))
+}
 
 const watch = () => {
 	serve()
 	gulp.watch('src/**/*.html', html).on('change', browserSync.reload)
-	gulp.watch('src/scss/**/*.scss', css)
-	gulp.watch('src/js/**/*.js', js)
-	gulp.watch('src/img/**/*', img)
+	gulp.watch(['src/scss/**/*.scss', 'src/sass/**/*.sass'], css)
+	gulp.watch('src/**/*.js', js)
+	gulp.watch(['src/img/**/*', 'src/images/**/*'], img)
+	gulp.watch('src/*.ico', ico)
+	gulp.watch('src/fonts/**/*', ico)
 }
 
-// Production tasks
-const buildHtml = () =>
-	gulp.src('src/**/*.html')
-		.pipe(gulp.dest('dist'))
-
-const buildJs = () =>
-	gulp.src('src/js/script.js')
-		.pipe(babel({
-			presets: ['@babel/env']
-		}))
-		.pipe(uglify({
-			toplevel: true
-		}))
-		.pipe(gulp.dest('dist/js'))
-
-const buildCss = () => {
-	const plugins = [
-		autoprefixer({
-			cascase: false
-		}),
-		cssnano()
-	]
-	return gulp.src('src/css/**/*.css')
-		.pipe(postcss(plugins))
-		.pipe(gulp.dest('dist/css'))
-}
-
-const buildImg = () =>
-	gulp.src('src/img/**/*')
-		.pipe(tinypng())
-    .pipe(gulp.dest('dist/img'))
-    
-const buildIco = () =>
-  gulp.src('src/*.ico')
-    .pipe(gulp.dest('dist'))
-
-const buildFonts = () =>
-	gulp.src('src/fonts/**/*')
-		.pipe(gulp.dest('dist/fonts'))
-
-// Bind functions to tasks
 // Development
+gulp.task('clean', clean)
 gulp.task('html', html)
 gulp.task('css', css)
 gulp.task('js', js)
 gulp.task('img', img)
-gulp.task('clean', clean)
+gulp.task('ico', ico)
+gulp.task('fonts', fonts)
 gulp.task('watch', watch)
-// Production
-gulp.task('build:html', buildHtml)
-gulp.task('build:js', buildJs)
-gulp.task('build:css', buildCss)
-gulp.task('build:img', buildImg)
-gulp.task('build:ico', buildIco)
-gulp.task('build:fonts', buildFonts)
 
-// Combined tasks
-gulp.task('start', gulp.series(gulp.parallel('html', 'css', 'js', 'img'), 'watch'))
-gulp.task('build', gulp.series('clean', gulp.parallel('build:html', 'build:js', 'build:css', 'build:img', 'build:ico', 'build:fonts')))
-gulp.task('default', gulp.series('start'))
+gulp.task('default', gulp.series('clean', gulp.parallel('html', 'css', 'js', 'img', 'ico', 'fonts'), 'watch'))
