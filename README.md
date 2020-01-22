@@ -11,7 +11,7 @@
 * ~~Add animation on scroll~~
 * Fix bugs
 * ~~Download fonts~~
-* Add button animations
+* ~~Add button animations~~
 * ~~Use scss variables~~
 * ~~Add carousel~~
 * ~~Work on progress bars~~
