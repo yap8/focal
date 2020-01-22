@@ -10,7 +10,7 @@
 * Make button component
 * ~~Add animation on scroll~~
 * Fix bugs
-* Download fonts
+* ~~Download fonts~~
 * Add button animations
 * ~~Use scss variables~~
 * ~~Add carousel~~
