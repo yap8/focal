@@ -31,16 +31,7 @@
     }
   }
   &__info-button {
-    height: 56px;
     width: 185px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid $c-primary;
-    font-size: $fs-m;
-    color: $tc-03;
-    font-weight: 700;
-    text-transform: uppercase;
   }
   &__progress {
     width: 47%;

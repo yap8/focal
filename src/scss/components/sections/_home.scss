@@ -43,16 +43,7 @@
     }
   }
   &__button {
-    text-transform: uppercase;
-    font-weight: 700;
-    height: 56px;
     width: 185px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: $fs-m;
-    color: $tc-primary;
-    border: 2px solid $c-secondary;
   }
 }
 

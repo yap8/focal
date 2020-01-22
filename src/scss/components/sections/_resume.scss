@@ -36,15 +36,6 @@
 
   }
   &__button {
-    font-size: $fs-m;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 56px;
     width: 215px;
-    color: $tc-03;
-    border: 2px solid $c-primary;
   }
 }

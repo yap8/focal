@@ -1,0 +1,21 @@
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $fs-m;
+  color: $tc-primary;
+  border: 2px solid $c-secondary;
+  cursor: pointer;
+  &--primary {
+    color: $tc-03;
+    border-color: $c-primary;
+  }
+  &--dark {
+    background-color: $sc-04;
+    border-color: $sc-04;
+    color: $tc-primary;
+  }
+}

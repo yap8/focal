@@ -39,14 +39,6 @@
     resize: vertical;
   }
   &__button {
-    background-color: $sc-04;
-    color: $tc-primary;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: $fs-m;
-    height: 56px;
     width: 185px;
-    border: 0;
-    cursor: pointer;
   }
 }
