@@ -9,13 +9,44 @@
   color: $tc-primary;
   border: 2px solid $c-secondary;
   cursor: pointer;
+  outline: 0;
+  transition: background-color .2s ease;
+  &--light {
+    &:hover {
+      background-color: rgba($tc-primary, .15);
+    }
+    &:focus {
+      background-color: rgba($tc-primary, .15);
+      color: $tc-03;
+      border-color: $tc-03;
+      box-shadow: 0 0 0 2px $tc-03;
+    }
+  }
   &--primary {
     color: $tc-03;
     border-color: $c-primary;
+    &:hover {
+      background-color: rgba($tc-03, .15);
+    }
+    &:focus {
+      background-color: rgba($tc-03, .15);
+      color: $tc-03;
+      border-color: $tc-03;
+      box-shadow: 0 0 0 2px $tc-03;
+    }
   }
   &--dark {
+    color: $tc-primary;
     background-color: $sc-04;
     border-color: $sc-04;
-    color: $tc-primary;
+    &:hover {
+      background-color: rgba($sc-04, .65);
+    }
+    &:focus {
+      background-color: rgba($sc-04, .65);
+      color: $tc-03;
+      border-color: $tc-03;
+      box-shadow: 0 0 0 2px $tc-03;
+    }
   }
 }
