@@ -4,12 +4,14 @@
   const home = document.querySelector('#home')
 
   const handleScroll = () => {
-    const headerPositionFromTop = header.getBoundingClientRect().top
-
-    if (headerPositionFromTop <= 0 && !header.classList.contains('section-header--active')) {
-      header.classList.add('section-header--active')
-    } else if (home.clientHeight - pageYOffset >= header.clientHeight) {
-      header.classList.remove('section-header--active')
+    if (window.innerWidth > 1280) {
+      const headerPositionFromTop = header.getBoundingClientRect().top
+  
+      if (headerPositionFromTop <= 0 && !header.classList.contains('section-header--active')) {
+        header.classList.add('section-header--active')
+      } else if (home.clientHeight - pageYOffset >= header.clientHeight) {
+        header.classList.remove('section-header--active')
+      }
     }
   }
 
@@ -96,4 +98,19 @@
   })
 
   carousel.addPagination();
+}
+
+// Burger menu
+{
+  const button = document.querySelector('#nav-toggle-button')
+  const menu = document.querySelector('#nav-menu')
+  const menuButtons = menu.querySelectorAll('a')
+
+  const toggleShowMenu = () => menu.classList.toggle('nav__list--mobile-hidden')
+
+  menuButtons.forEach(button => {
+    button.addEventListener('click', toggleShowMenu)
+  })
+
+  button.addEventListener('click', toggleShowMenu)
 }

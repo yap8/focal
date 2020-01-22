@@ -3,6 +3,11 @@
   background-color: $sc-03;
   width: 100%;
   z-index: 999;
+  @media (max-width: $res-tablet) {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+  }
   &--active {
     position: fixed;
     top: 0;
@@ -13,12 +18,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: $res-tablet) {
+      height: 64px;
+    }
   }
   &__logo {
     height: 100%;
+    @media (max-width: $res-tablet) {
+      height: 60%;
+    }
   }
   &__nav {
     width: 66%;
     height: 100%;
+    @media (max-width: $res-tablet) {
+      height: 60%;
+      width: 80%;
+    }
+    @media (max-width: $res-mobile) {
+      width: auto;
+    }
   }
 }

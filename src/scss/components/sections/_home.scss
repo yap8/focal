@@ -34,7 +34,7 @@
       margin-bottom: 40px;
     }
     @media (max-width: $res-mobile) {
-      font-size: calc(#{$fs-h1} - 22px);
+      font-size: calc(#{$fs-h1} - 20px);
       margin-bottom: 30px;
     }
     @media (max-width: $res-tiny) {

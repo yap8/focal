@@ -17,6 +17,14 @@
     text-transform: uppercase;
     font-weight: 700;
     margin-right: 20px;
+    @media (max-width: $res-tablet) {
+      height: 38px;
+      width: 38px;
+      margin-right: 10px;
+    }
+    @media (max-width: $res-mobile) {
+      margin-right: 0;
+    }
   }
   &__extra {
     display: flex;
@@ -29,6 +37,12 @@
     font-size: $fs-xl;
     &--highlighted {
       color: $tc-03;
+    }
+    @media (max-width: $res-tablet) {
+      font-size: calc(#{$fs-xl} - 8px);
+    }
+    @media (max-width: $res-mobile) {
+      display: none;
     }
   }
 }
