@@ -11,6 +11,16 @@
   cursor: pointer;
   outline: 0;
   transition: background-color .2s ease;
+  @media (max-width: $res-tablet) {
+    height: 50px;
+  }
+  @media (max-width: $res-mobile) {
+    height: 45px;
+    font-size: calc(#{$fs-m} - 2px);
+  }
+  @media (max-width: $res-tiny) {
+    height: 40px;
+  }
   &--light {
     &:hover {
       background-color: rgba($tc-primary, .15);
