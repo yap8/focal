@@ -2,9 +2,13 @@
   background-color: $sc-02;
   overflow: hidden;
   &__inner {
-    height: 415px;
+    min-height: 415px;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: $res-tablet) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
   }
 }
