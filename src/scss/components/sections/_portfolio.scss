@@ -2,10 +2,15 @@
   background-color: $sc-01;
   overflow: hidden;
   &__inner {
-    height: 1395px;
+    min-height: 1395px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: $res-tablet) {
+      min-height: auto;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
   }
   &__title {
     text-align: center;
@@ -14,6 +19,9 @@
     font-weight: 700;
     color: $tc-01;
     margin-bottom: 40px;
+    @media (max-width: $res-tablet) {
+      margin-bottom: 20px;
+    }
   }
   &__text {
     color: $tc-01;
@@ -21,6 +29,9 @@
     line-height: 30px;
     text-align: center;
     margin-bottom: 90px;
+    @media (max-width: $res-tablet) {
+      margin-bottom: 30px;
+    }
   }
   &__items {
     
