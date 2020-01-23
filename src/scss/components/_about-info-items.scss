@@ -1,5 +1,4 @@
-.about-content-list {
-  width: 100%;
+.about-info-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,7 +13,7 @@
     margin-right: 30px;
   }
   &__item-icon {
-
+    
   }
   &__item-content {
 
