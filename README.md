@@ -9,7 +9,7 @@
 * ~~Improve accessibility~~
 * ~~Make button component~~
 * ~~Add animation on scroll~~
-* Fix bugs
+* ~~Fix horizontal scroll bug~~
 * ~~Download fonts~~
 * ~~Add button animations~~
 * ~~Use scss variables~~
