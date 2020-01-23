@@ -16,3 +16,4 @@
 * ~~Add carousel~~
 * ~~Work on progress bars~~
 * Add lazyload
+* Download all libraries
