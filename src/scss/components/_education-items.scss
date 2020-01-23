@@ -2,6 +2,9 @@
   &__item {
     &:not(:last-child) {
       margin-bottom: 65px;
+      @media (max-width: $res-mobile) {
+        margin-bottom: 30px;
+      }
     }
   }
   &__item-title {
