@@ -1,7 +1,7 @@
 # Focal, a static layout for portfolio
 
 ## Todo
-* Add media queries
+* ~~Add media queries~~
 * ~~section-about-block rework~~
 * ~~Add smooth scroll~~
 * ~~Change header behavior~~
