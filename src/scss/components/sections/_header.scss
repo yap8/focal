@@ -4,7 +4,6 @@
   z-index: 999;
   position: absolute;
   bottom: 0;
-  overflow: hidden;
   @media (max-width: $res-tablet) {
     position: fixed;
     top: 0;
@@ -23,6 +22,9 @@
     justify-content: space-between;
     @media (max-width: $res-tablet) {
       height: 64px;
+    }
+    @media (max-width: $res-tablet) {
+      height: 42px;
     }
   }
   &__logo {
