@@ -10,9 +10,9 @@
     width: 50%;
     max-width: 320px;
     display: flex;
-    flex-direction: column;
     margin-bottom: 40px;
     @media (max-width: $res-tablet) {
+      flex-direction: column;
       width: 38%;
       max-width: 100%;
       margin-bottom: 30px;
