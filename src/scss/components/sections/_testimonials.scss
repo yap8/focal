@@ -3,12 +3,15 @@
   overflow: hidden;
   &__inner {
     min-height: 415px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     @media (max-width: $res-tablet) {
       padding-top: 25px;
       padding-bottom: 25px;
     }
+  }
+  &__carousel {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

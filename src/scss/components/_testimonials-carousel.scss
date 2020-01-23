@@ -1,8 +1,9 @@
 .testimonials-carousel {
   &__list {
-    // max-width: 1060px;
+    
   }
   &__list-item {
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
