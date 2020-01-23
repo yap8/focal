@@ -1,5 +1,6 @@
 .section-testimonials {
   background-color: $sc-02;
+  overflow: hidden;
   &__inner {
     height: 415px;
     display: flex;

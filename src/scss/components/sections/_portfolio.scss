@@ -1,5 +1,6 @@
 .section-portfolio {
   background-color: $sc-01;
+  overflow: hidden;
   &__inner {
     height: 1395px;
     display: flex;

@@ -1,6 +1,7 @@
 .section-about-block {
   background-color: $sc-02;
   position: relative;
+  overflow: hidden;
   &__inner {
     min-height: 755px;
     display: flex;

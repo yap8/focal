@@ -1,5 +1,6 @@
 .section-resume {
   background-color: $sc-02;
+  overflow: hidden;
   &::after {
     content: '';
     display: block;

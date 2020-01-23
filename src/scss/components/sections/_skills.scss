@@ -1,5 +1,6 @@
 .section-skills {
   background-color: $sc-01;
+  overflow: hidden;
   &__inner {
     min-height: 620px;
     display: flex;

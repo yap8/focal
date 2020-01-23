@@ -1,5 +1,6 @@
 .section-education {
   background-color: $sc-01;
+  overflow: hidden;
   &__inner {
     height: 820px;
     display: flex;

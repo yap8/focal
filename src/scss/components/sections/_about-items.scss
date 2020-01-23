@@ -1,5 +1,6 @@
 .section-about-items {
   background-color: $sc-01;
+  overflow: hidden;
   &__inner {
     min-height: 305px;
     padding-top: 20px;

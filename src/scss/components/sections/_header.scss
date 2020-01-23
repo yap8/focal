@@ -4,6 +4,7 @@
   z-index: 999;
   position: absolute;
   bottom: 0;
+  overflow: hidden;
   @media (max-width: $res-tablet) {
     position: fixed;
     top: 0;

@@ -2,6 +2,7 @@
   background-image: url('../img/hero.jpg');
   background-size: cover;
   background-position: center top;
+  overflow: hidden;
   &__inner {
     height: 100vh;
     display: flex;
