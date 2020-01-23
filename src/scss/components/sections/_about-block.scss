@@ -2,17 +2,20 @@
   background-color: $sc-02;
   position: relative;
   &__inner {
-    height: 755px;
+    min-height: 755px;
     display: flex;
     justify-content: space-between;
   }
   &__photo {
     width: 32%;
-    height: 100%;
+    min-height: 100%;
     position: relative;
     @media (min-width: $res-highres) {
       width: 32%;
       overflow: hidden;
+    }
+    @media (max-width: $res-tablet) {
+      display: none;
     }
   }
   &__photo-content {
@@ -29,25 +32,47 @@
     }
   }
   &__info {
-    height: 100%;
+    min-height: 100%;
     width: 66%;
+    @media (max-width: $res-tablet) {
+      width: 100%;
+    }
   }
   &__info-content {
     padding-top: 100px;
     padding-left: 100px;
     padding-bottom: 100px;
+    @media (max-width: $res-tablet) {
+      padding-top: 50px;
+      padding-left: 0;
+      padding-bottom: 50px;
+    }
+    @media (max-width: $res-mobile) {
+      padding-top: 25px;
+      padding-left: 0;
+      padding-bottom: 25px;
+    }
   }
   &__info-content-title {
     font-size: $fs-xl;
     text-transform: uppercase;
     color: $tc-01;
     margin-bottom: 30px;
+    @media (max-width: $res-tablet) {
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
   &__info-content-text {
     font-size: $fs-m;
     color: $tc-02;
     line-height: 30px;
     margin-bottom: 40px;
+    @media (max-width: $res-tablet) {
+      margin: 0 auto 35px;
+      width: 70%;
+      text-align: center;
+    }
   }
   &__info-content-text-paragraph {
     &:not(:last-child) {
