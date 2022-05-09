@@ -8,7 +8,7 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Arseny Nebozhenko",
-  "homepage": "https://arsenyNebozhenko.io/focal",
+  "homepage": "https://yap8.github.io/focal",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.2",
@@ -23,7 +23,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^8.0.0",
     "gulp-posthtml": "^3.0.4",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.1",
     "gulp-tinypng-unlimited": "^1.0.3",
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify": "^3.0.2",
